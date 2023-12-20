@@ -1,0 +1,143 @@
+ *{
+
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+
+}
+/* Style pour les images pour qu'elles ne dépassent pas leur conteneur */
+img {
+        max-width: 100%;
+}
+
+/* Style pour la classe principale du jeu du taquin */
+.JeuduTaquin{
+        display: flex;
+}
+
+/* Style pour le conteneur principal du jeu */
+.slider-game {
+
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 5%;
+        
+
+}
+
+/* Style pour le conteneur de la grille de jeu */
+.container {
+        display : grid;
+        width: 20em;
+        height: 20em;
+        grid-template-columns: repeat (3,1fr);
+        grid-auto-rows: 3.5em;
+        gap: 0.35em;
+       
+
+}
+
+/* Style spécifique pour la classe Dracaufeu */
+.Dracaufeu {
+
+        margin-left: 3em;
+        width: 18em;
+        height: 18em;
+
+
+
+
+
+}
+
+.original-image {
+        width: 20em;
+        height: 20em;
+
+
+}
+
+.image-container {
+
+        border: 1px solid rgb(0, 0, 0);
+
+
+}
+
+/* Style pour l'écran de démarrage (lancement de jeu) */
+.cover-screen {
+
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #3a2e0c;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+}
+
+
+/* Style pour le bouton de démarrage ( page lancement de jeu) */
+#start-button {
+        font-size: 1.2em;
+        padding: 0.8em 2em;
+        border: none;
+        border-radius: 3em;
+        cursor: pointer;
+     
+
+}
+/* Style pour l'affichage du nombre de mouvements ( moves en haut à droite ) */
+#moves 
+
+{
+        position : relative;
+        margin : 1em; 
+        text-align: right;
+
+}
+
+/* Style pour masquer un élément */
+.hide {
+
+        display: none;
+
+
+}
+/* Styles pour les écrans de taille réduite*/
+@media only screen and (max-width: 768px){
+        .slider-game {
+                flex-direction: column;
+
+        }
+
+        .container {
+
+                width: 20em;
+                height: 20em;
+                grid-auto-rows: 6em;
+
+        }
+
+        .original-image {
+                width: 18em;
+                height: 18em;
+
+
+
+        }
+
+        
+        ;
+
+}
+
